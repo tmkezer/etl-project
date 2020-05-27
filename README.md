@@ -16,3 +16,5 @@ For example, using the pandas 'to_datetime' function took roughly 3 minutes whil
 
 I decided to use MySQL mainly because it's what I'm most comfortable with. However, given the relationship between the datasets (zone, map_id and other columns were shared across datasets) it also made the most sense (though given the size, MongoDB may have been a better choice).
 
+One other issues I ran into was trying to commit/push a 700MB file to github. I would not recommend this. The push errored out and left me a commit behind the master branch. Git reset did not seem to work so I simply created a new repo, added the jupyter notebook files and smaller csv files and pushed them to github successfully!
+
